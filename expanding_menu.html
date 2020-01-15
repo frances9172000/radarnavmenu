@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Radar Nav Menu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/512d9bb32f.js" crossorigin="anonymous"></script>
+<body>
+    <div class="container">
+        <div class="menu-cont" id="menu-cont">
+            <div class="menu" id="menu">
+                <div class="first" id="first"></div>
+                <div class="second" id="second"></div>
+                <div class="third" id="third"></div>
+            </div>
+            
+        </div>
+        <div class="radar" id="radar"></div>
+        <div class="google-container" id="-container">
+            <a class="google" id="google" href="http://google.com" target="_blank">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="60px" height="60px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+           <g>
+               <path fill-rule="evenodd" clip-rule="evenodd" fill="#FEFDFD" d="M128.833,210.947c118.111,0,236.222,0,354.334,0
+                   c0,123.367,0,246.738,0,370.105c-118.112,0-236.223,0-354.334,0C128.833,457.686,128.833,334.314,128.833,210.947z
+                    M402.889,509.154c37.924-33.125,57.587-97.311,42.965-140.34c-47.024,0-94.048,0-140.809,0c0,20.285,0,39.112,0,60.355
+                   c26.908,0,53,0,84.663,0c-12.475,16.573-21.65,28.769-30.825,40.961c-56.695,39.03-114.159,13.741-137.555-41.114
+                   c0.104-21.548,0.207-43.096,0.309-64.64c15.44-29.857,36.975-51.163,70.545-56.711c26.979-4.457,49.55,6.405,68.249,19.841
+                   c15.005-14.461,28.738-27.696,42.447-40.913c-66.112-70.36-192.237-46.919-227.679,41.636
+                   c-23.995,46.229-22.022,92.686-1.099,139.307C221.281,558.879,338.146,580.14,402.889,509.154z"/>
+               <path fill-rule="evenodd" clip-rule="evenodd" fill="#FE4103" d="M175.203,328.215c35.438-88.54,161.563-111.98,227.675-41.621
+                   c-13.709,13.217-27.442,26.452-42.447,40.913c-18.699-13.436-41.27-24.298-68.249-19.841c-33.57,5.548-55.104,26.854-70.554,56.715
+                   C206.147,352.326,190.674,340.272,175.203,328.215z"/>
+               <path fill-rule="evenodd" clip-rule="evenodd" fill="#50AF50" d="M221.328,429.017c23.396,54.855,80.859,80.145,137.555,41.114
+                   c14.669,13.008,29.338,26.016,44.006,39.023c-64.742,70.985-181.607,49.725-228.792-41.624
+                   C189.839,454.686,205.584,441.854,221.328,429.017z"/>
+               <path fill-rule="evenodd" clip-rule="evenodd" fill="#1B77D0" d="M402.889,509.154c-14.668-13.008-29.337-26.016-44.006-39.023
+                   c9.175-12.192,18.351-24.388,30.825-40.961c-31.663,0-57.755,0-84.663,0c0-21.243,0-40.071,0-60.355
+                   c46.761,0,93.784,0,140.815,0.026C460.476,411.844,440.813,476.029,402.889,509.154z"/>
+               <path fill-rule="evenodd" clip-rule="evenodd" fill="#FDC00B" d="M221.328,429.017c-15.744,12.837-31.489,25.669-47.231,38.514
+                   c-20.92-46.614-22.893-93.071,1.104-139.308c15.473,12.05,30.946,24.104,46.427,36.158
+                   C221.535,385.921,221.432,407.469,221.328,429.017z"/>
+           </g>
+           </svg>
+            </a>
+        </div>
+        <div class="facebook-container" id="facebook-container">
+            <a class="facebook" id="facebook" href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+        </div>
+        <div class="youtube-container" id="youtube-container">
+            <a class="youtube" id="youtube" href="https://youtube.com" target="_blank">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+        </div>
+        <div class="twitter-container" id="twitter-container">
+            <a class="twitter"  id="twitter" href="https://twitter.com" target="_blank">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+        </div>
+        <div class="phcorner-container" id="phcorner-container">
+            <a class="phcorner" id="phcorner" href="https://phcorner.net" target="_blank">
+
+            </a>
+        </div>
+       
+    </div>
+    <script>
+        document.getElementById('menu').addEventListener('click', function() {
+            document.getElementById('google').classList.toggle('active');
+            document.getElementById('youtube').classList.toggle('active');
+            document.getElementById('facebook').classList.toggle('active');
+            document.getElementById('twitter').classList.toggle('active');
+            document.getElementById('first').classList.toggle('active');
+            document.getElementById('second').classList.toggle('active');
+            document.getElementById('third').classList.toggle('active');
+            document.getElementById('menu').classList.toggle('active');
+            document.getElementById('menu-cont').classList.toggle('active');
+            document.getElementById('radar').classList.toggle('active');
+        });
+        
+    </script>
+</body>
+</html>
